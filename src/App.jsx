@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { Image, Button, Container, Row, Card } from 'react-bootstrap';
 import farosNetwork from './assets/faros-network-graph.png';
+import GianMarco from './assets/Gian-Marco.jpg';
 import logo from './assets/faros-removebg.png'
 import CustomCard from './components/Card/Card';
 import Sketch from './components/p5/Sketch';
@@ -36,6 +37,45 @@ function App() {
     <Row key={i} className='d-flex justify-content-center m-2 gap-5'>
       {row.map((card, j) => (
         <CustomCard key={j} {...card} />
+      ))}
+    </Row>
+  ));
+
+  const developerCards = [
+    [
+      {
+        title: 'Gian-Marco Alagna',
+        img: GianMarco,
+        text: 'Full-Stack developer with a passion for creating beautiful, simplistic, and intuitive user interfaces. Sole developer of the this website your currently viewing.'
+      },
+      {
+        title: 'Bobby Stipp',
+        img: '',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente tempore modi voluptatem molestiae mollitia vitae quos, fugiat voluptates impedit sed maiores illum nulla necessitatibus molestias quia, reiciendis similique sint?'
+      }
+    ],
+    [
+      {
+        title: 'Edwin Morlu',
+        img: '',
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nam voluptas sunt ea, reiciendis, cupiditate, pariatur obcaecati corrupti nulla earum dicta asperiores perferendis ex porro fugiat itaque autem suscipit dolorem!'
+      },
+      {
+        title: 'Nick Doolan',
+        img: '',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo ipsum ex sed neque veritatis deleniti, obcaecati voluptas similique non sit quia iure voluptatum ipsa nisi maiores atque. Quas, asperiores.'
+      }],
+    [
+      {
+        title: 'Tristan Williams',
+        img: '',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum, id earum eius omnis voluptatem minus aliquam quaerat modi excepturi dicta accusamus ipsum inventore molestias possimus beatae, impedit exercitationem vero.'
+      }
+    ]
+  ].map((card, i) => (
+    <Row key={i} className='d-flex justify-content-center m-2 gap-2'>
+      {card.map((developer, j) => (
+        <CustomCard key={j} {...developer} />
       ))}
     </Row>
   ));
@@ -86,57 +126,7 @@ function App() {
               Meet The Team
             </h1>
           </Row>
-          <Row className='d-flex justify-content-center m-2 gap-2'>
-            <Card style={{ width: '25rem' }} className='p-1'>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Bobby Stipp</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente tempore modi voluptatem molestiae mollitia vitae quos, fugiat voluptates impedit sed maiores illum nulla necessitatibus molestias quia, reiciendis similique sint?
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: '25rem' }} className='p-1'>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Edwin Morlu</Card.Title>
-                <Card.Text>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nam voluptas sunt ea, reiciendis, cupiditate, pariatur obcaecati corrupti nulla earum dicta asperiores perferendis ex porro fugiat itaque autem suscipit dolorem!
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className='d-flex justify-content-center m-2 gap-2'>
-            <Card style={{ width: '25rem' }} className='p-1'>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Gian-Marco Alagna</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nemo magni, sapiente sit iste, nisi nam dignissimos quae fugit debitis dolor eligendi, a eveniet modi obcaecati dolorem aliquam. Nesciunt, sed.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card style={{ width: '25rem' }} className='p-1'>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Nick Doolan</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo ipsum ex sed neque veritatis deleniti, obcaecati voluptas similique non sit quia iure voluptatum ipsa nisi maiores atque. Quas, asperiores.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className='d-flex justify-content-center m-2 gap-2'>
-            <Card style={{ width: '25rem' }} className='p-1'>
-              <Card.Img variant="top" src="" />
-              <Card.Body>
-                <Card.Title>Tristan Williams</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum, id earum eius omnis voluptatem minus aliquam quaerat modi excepturi dicta accusamus ipsum inventore molestias possimus beatae, impedit exercitationem vero.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Row>
+          {developerCards}
         </Container>
       </main >
       <footer>

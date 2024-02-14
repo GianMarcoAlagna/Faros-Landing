@@ -4,8 +4,8 @@ import p5 from 'p5';
 
 const Sketch = ({ parent }) => {
   const sketchRef = useRef(null);
-  const parentHeight = parent.current.clientHeight;
-  const parentWidth = parent.current.clientWidth;
+  const parentHeight = parent?.current?.clientHeight || window.innerHeight;
+  const parentWidth = parent?.current?.clientWidth || window.innerWidth;
   useEffect(() => {
     const sketch = new p5(p => {
       let bubbles = []; // Array to store bubbles
@@ -70,10 +70,16 @@ const Sketch = ({ parent }) => {
         }
 
         display() {
+          // the bubble itself
           p.fill(0, 255, 255);
           p.ellipse(this.x, this.y, this.r * 2);
+          // the bubble's shiny part
           p.fill(255);
+          p.stroke(225);
           p.ellipse(this.x + 5, this.y - 10, this.r / 2);
+          // the bubble's highlight
+          p.strokeWeight(4)
+          p.stroke(0, 100, 100);
         }
 
         move() {
@@ -99,7 +105,7 @@ const Sketch = ({ parent }) => {
       sketch.remove();
     };
   }, [parent]);
-
+  
   return <div className="p5-sketch" ref={sketchRef}></div>;
 };
 
