@@ -1,0 +1,47 @@
+/* COPY EVERYTHING FROM HERE, DOWN*/
+.text-container {
+  position: relative;
+  color: white;
+  font-size: 5rem;
+  overflow: visible;
+  width: fit-content;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px #61dafb;
+  position: absolute;
+  color: transparent;
+  width: fit-content;
+  overflow: visible;
+  white-space: nowrap;
+  text-shadow: 0 0 0.2em #61dafb;
+}
+
+.text-fill {
+  overflow: hidden;
+  width: fit-content;
+  animation: width 4s ease-in-out infinite alternate;
+  color: #61dafb;
+  white-space: nowrap;
+}
+
+/* .text-fill::after {
+  content: "";
+  height: 0.1rem;
+  background-color: white;
+  position: relative;
+  display: block;
+} */
+
+/* The point of the 25%, 50%, 75%, and the 0%, 100% in these animations is to cause a delay before the animation alternates between the complete and beginning states of the animation */
+@keyframes width {
+  0%,
+  100% {
+    width: 0%;
+  }
+  25%,
+  50%,
+  75% {
+    width: 100%;
+  }
+}

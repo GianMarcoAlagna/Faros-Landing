@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Image, Button, Container, Row, Card } from 'react-bootstrap';
+import { Image, Button, Container, Row } from 'react-bootstrap';
 import farosNetwork from './assets/faros-network-graph.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
 import Bobby from './assets/Bobby.jpg';
@@ -7,6 +7,7 @@ import Nick from './assets/Nick.jpg';
 import Tristan from './assets/Tristan.jpg';
 import logo from './assets/faros-removebg.png'
 import CustomCard from './components/Card/Card';
+import AnimatedText from './components/typography/AnimatedText'
 import Sketch from './components/p5/Sketch';
 
 function App() {
@@ -93,7 +94,8 @@ function App() {
           <div className="blur-overlay"></div>
           <Image className='logo' src={logo} alt="Faros logo" />
           <div className='header-body'>
-            <h1 className='description-emphasis'>Faros-Scope</h1>
+            <AnimatedText text='Faros-Scope' />
+            {/* <h1 className='description-emphasis'>Faros-Scope</h1> */}
             <Row className='d-flex justify-content-center m-2'>
               <h2 className='description'>
                 Faros is a Kubernetes Cluster observability platform that helps you visualize, and monitor your Kubernetes based applications/infrastructure
