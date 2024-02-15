@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react'
 import { Image, Button, Container, Row, Card } from 'react-bootstrap';
 import farosNetwork from './assets/faros-network-graph.png';
-import GianMarco from './assets/Gian-Marco.jpg';
+import GianMarco from './assets/Gian-MarcoTwo.png';
+import Bobby from './assets/Bobby.jpg';
+import Nick from './assets/Nick.jpg';
 import logo from './assets/faros-removebg.png'
 import CustomCard from './components/Card/Card';
 import Sketch from './components/p5/Sketch';
@@ -46,12 +48,12 @@ function App() {
       {
         title: 'Gian-Marco Alagna',
         img: GianMarco,
-        text: 'Full-Stack developer with a passion for creating beautiful, simplistic, and intuitive user interfaces. Sole developer of the this website your currently viewing.'
+        text: 'Full-Stack developer with a passion for creating beautiful, clean, and intuitive user interfaces using tech like React, Redux, Sass, and basic markup. Sole developer responsible for the creation of this website.'
       },
       {
         title: 'Bobby Stipp',
-        img: '',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente tempore modi voluptatem molestiae mollitia vitae quos, fugiat voluptates impedit sed maiores illum nulla necessitatibus molestias quia, reiciendis similique sint?'
+        img: Bobby,
+        text: 'Seasoned Full Stack and Software Engineer proficient in developing web applications with TypeScript and Node.js. Expert in crafting durable APIs, command-line utilities, and deploying projects to cloud platforms.'
       }
     ],
     [
@@ -62,7 +64,7 @@ function App() {
       },
       {
         title: 'Nick Doolan',
-        img: '',
+        img: Nick,
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo ipsum ex sed neque veritatis deleniti, obcaecati voluptas similique non sit quia iure voluptatum ipsa nisi maiores atque. Quas, asperiores.'
       }],
     [
