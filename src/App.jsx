@@ -50,7 +50,7 @@ function App() {
       {
         title: 'Gian-Marco Alagna',
         img: GianMarco,
-        text: 'Full-Stack developer with a passion for creating beautiful, clean, and intuitive user interfaces using tech like React, Redux, Sass, and basic markup. Sole developer responsible for the creation of this website.'
+        text: 'Full-Stack developer with a passion for creating beautiful, clean, and intuitive user interfaces using tech like React, Redux, Sass, and basic markup. Developer responsible for the making of this website.'
       },
       {
         title: 'Bobby Stipp',
