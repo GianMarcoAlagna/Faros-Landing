@@ -1,13 +1,14 @@
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { Image, Button, Container, Row } from 'react-bootstrap';
 import farosNetwork from './assets/graph.png';
+import farosSimple from './assets/graph2.png';
+import farosRT from './assets/graph3.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
 import Tristan from './assets/Tristan.jpg';
 import logo from './assets/faros-removebg.png'
 import CustomCard from './components/Card/Card';
-import AnimatedText from './components/typography/AnimatedText'
 import Sketch from './components/p5/Sketch';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       {
         title: 'Real-Time Metrics',
         text: 'Faros provides real-time metrics and logs for your Kubernetes cluster.',
-        img: farosNetwork
+        img: farosRT
       },
     ],
     [
@@ -34,13 +35,13 @@ function App() {
       {
         title: 'Simple Interface',
         text: 'We seek to provide a simple and easy to use interface with no learning curve.',
-        img: farosNetwork
+        img: farosSimple
       }
     ]
   ].map((row, i) => (
     <Row key={i} className='d-flex justify-content-center m-2 gap-5'>
       {row.map((card, j) => (
-        <CustomCard key={j} {...card} />
+        <CustomCard key={j} magnify={true} {...card} />
       ))}
     </Row>
   ));
@@ -50,30 +51,30 @@ function App() {
       {
         title: 'Gian-Marco Alagna',
         img: GianMarco,
-        text: 'Full-Stack developer with a passion for creating beautiful, clean, and intuitive user interfaces using tech like React, Redux, Sass, and basic markup. Developer responsible for the making of this website.'
+        text: 'Full-Stack developer with a passion for creating beautiful, clean, and intuitive user interfaces using tech like React, Redux, Sass, and basic markup. Developer responsible for the making of this website.',
       },
       {
         title: 'Bobby Stipp',
         img: Bobby,
-        text: 'Seasoned Full Stack and Software Engineer proficient in developing web applications with TypeScript and Node.js. Expert in crafting durable APIs, command-line utilities, and deploying projects to cloud platforms.'
+        text: 'Seasoned Full Stack and Software Engineer proficient in developing web applications with TypeScript and Node.js. Expert in crafting durable APIs, command-line utilities, and deploying projects to cloud platforms.',
       }
     ],
     [
       {
         title: 'Edwin Morlu',
         img: '',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nam voluptas sunt ea, reiciendis, cupiditate, pariatur obcaecati corrupti nulla earum dicta asperiores perferendis ex porro fugiat itaque autem suscipit dolorem!'
+        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nam voluptas sunt ea, reiciendis, cupiditate, pariatur obcaecati corrupti nulla earum dicta asperiores perferendis ex porro fugiat itaque autem suscipit dolorem!',
       },
       {
         title: 'Nick Doolan',
         img: Nick,
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo ipsum ex sed neque veritatis deleniti, obcaecati voluptas similique non sit quia iure voluptatum ipsa nisi maiores atque. Quas, asperiores.'
+        text: 'Passionate full-stack software engineer that thrives on solving complex problems collaboratively and sharing knowledge. He specializes in data flow and state management on both ends in React, Redux, and Node.js.',
       }],
     [
       {
         title: 'Tristan Williams',
         img: Tristan,
-        text: 'Full-Stack developer with an appreciation for the finer details. Worked with React, Redux, Typescript, Node and more all culminating in a well-tested and thought-out application.'
+        text: 'Full-Stack developer with an appreciation for the finer details. Worked with React, Redux, Typescript, Node and more all culminating in a well-tested and thought-out application.',
       }
     ]
   ].map((card, i) => (

@@ -1,0 +1,9 @@
+.modal {
+  .modal-content {
+    background-color: #23272f;
+    .modal-text {
+      background-color: #0000005f;
+      border-radius: 1em;
+    }
+  }
+}
