@@ -94,8 +94,7 @@ function App() {
           <div className="blur-overlay"></div>
           <Image className='logo' src={logo} alt="Faros logo" />
           <div className='header-body'>
-            <AnimatedText text='Faros-Scope' />
-            {/* <h1 className='description-emphasis'>Faros-Scope</h1> */}
+            <h1 className='description-emphasis'>Faros-Scope</h1>
             <Row className='d-flex justify-content-center m-2'>
               <h2 className='description'>
                 Faros is a Kubernetes Cluster observability platform that helps you visualize, and monitor your Kubernetes based applications/infrastructure
