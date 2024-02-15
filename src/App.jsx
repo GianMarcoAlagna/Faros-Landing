@@ -4,6 +4,7 @@ import farosNetwork from './assets/faros-network-graph.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
+import Tristan from './assets/Tristan.jpg';
 import logo from './assets/faros-removebg.png'
 import CustomCard from './components/Card/Card';
 import Sketch from './components/p5/Sketch';
@@ -70,8 +71,8 @@ function App() {
     [
       {
         title: 'Tristan Williams',
-        img: '',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum, id earum eius omnis voluptatem minus aliquam quaerat modi excepturi dicta accusamus ipsum inventore molestias possimus beatae, impedit exercitationem vero.'
+        img: Tristan,
+        text: 'Full-Stack developer with an appreciation for the finer details. Worked with React, Redux, Typescript, Node and more all culminating in a well-tested and thought-out application.'
       }
     ]
   ].map((card, i) => (
