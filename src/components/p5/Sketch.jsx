@@ -95,7 +95,7 @@ const Sketch = ({ parent }) => {
 
       // Resize canvas when window is resized
       window.addEventListener('resize', () => {
-        p.resizeCanvas(window.innerWidth, window.innerHeight);
+        p.resizeCanvas(window.innerWidth, window.innerHeight, false);
         redrawCanvas();
       });
 
@@ -105,7 +105,7 @@ const Sketch = ({ parent }) => {
       sketch.remove();
     };
   }, [parent]);
-  
+
   return <div className="p5-sketch" ref={sketchRef}></div>;
 };
 

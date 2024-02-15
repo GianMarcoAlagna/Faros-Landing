@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { Image, Button, Container, Row } from 'react-bootstrap';
-import farosNetwork from './assets/faros-network-graph.png';
+import farosNetwork from './assets/graph.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
