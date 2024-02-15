@@ -14,13 +14,14 @@
   width: fit-content;
   overflow: visible;
   white-space: nowrap;
-  text-shadow: 0 0 0.2em #61dafb;
+  text-shadow: 0 0 0.1em #61dafb;
 }
 
 .text-fill {
   overflow: hidden;
   width: fit-content;
-  animation: width 4s ease-in-out infinite alternate;
+  /* transform-origin: center; */
+  /* animation: width 4s ease-in-out infinite alternate; */
   color: #61dafb;
   white-space: nowrap;
 }
@@ -34,7 +35,7 @@
 } */
 
 /* The point of the 25%, 50%, 75%, and the 0%, 100% in these animations is to cause a delay before the animation alternates between the complete and beginning states of the animation */
-@keyframes width {
+/* @keyframes width {
   0%,
   100% {
     width: 0%;
@@ -44,4 +45,4 @@
   75% {
     width: 100%;
   }
-}
+} */
