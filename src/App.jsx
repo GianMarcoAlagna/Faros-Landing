@@ -86,6 +86,7 @@ function App() {
   return (
     <>
       <header ref={headerRef}>
+        <div className="volumetricLighting"></div>
         <Sketch parent={headerRef} />
         <Container
           className='header-container'
