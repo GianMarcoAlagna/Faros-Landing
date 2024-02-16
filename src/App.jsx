@@ -71,7 +71,8 @@ function App() {
         title: 'Nick Doolan',
         img: Nick,
         text: 'Passionate full-stack software engineer that thrives on solving complex problems collaboratively and sharing knowledge. He specializes in data flow and state management on both ends in React, Redux, and Node.js.',
-      }],
+      }
+    ],
     [
       {
         title: 'Tristan Williams',
