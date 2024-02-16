@@ -3,6 +3,7 @@ import { Image, Button, Container, Row } from 'react-bootstrap';
 import farosNetwork from './assets/graph.png';
 import farosSimple from './assets/graph2.png';
 import farosRT from './assets/graph3.png';
+import farosSetup from './assets/readme.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
@@ -30,7 +31,7 @@ function App() {
       {
         title: 'Easy Setup',
         text: 'Faros is easy to setup and deploy in your Kubernetes cluster.',
-        img: farosNetwork
+        img: farosSetup
       },
       {
         title: 'Simple Interface',
