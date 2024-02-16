@@ -5,7 +5,7 @@ import farosSimple from './assets/graph2.png';
 import farosRT from './assets/graph3.png';
 import farosSetup from './assets/readme.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
-import Edwin from './assets/Edwin.JPG';
+import Edwin from './assets/Edwin2.jpg';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
 import Tristan from './assets/Tristan.jpg';
