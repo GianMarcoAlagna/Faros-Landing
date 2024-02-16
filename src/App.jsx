@@ -5,6 +5,7 @@ import farosSimple from './assets/graph2.png';
 import farosRT from './assets/graph3.png';
 import farosSetup from './assets/readme.png';
 import GianMarco from './assets/Gian-MarcoTwo.png';
+import Edwin from './assest/Edwin.jpg';
 import Bobby from './assets/Bobby.jpg';
 import Nick from './assets/Nick.jpg';
 import Tristan from './assets/Tristan.jpg';
@@ -63,8 +64,8 @@ function App() {
     [
       {
         title: 'Edwin Morlu',
-        img: '',
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nam voluptas sunt ea, reiciendis, cupiditate, pariatur obcaecati corrupti nulla earum dicta asperiores perferendis ex porro fugiat itaque autem suscipit dolorem!',
+        img: Edwin,
+        text: 'Full stack engineer passionate about building a deploying applications. Interested in all things tech but especially Kubernetes, Docker and Google Cloud. Always excited to build new things.',
       },
       {
         title: 'Nick Doolan',
